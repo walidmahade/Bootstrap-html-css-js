@@ -26,6 +26,23 @@
         font-weight: 800;
         color: #0b0f19;
     }
+    .pe-2 {
+        padding-right: 20px !important;
+    }
+    .pe-4 {
+        padding-right: 20px !important;
+    }
+    .pe-5 {
+        padding-right: 70px !important;
+    }
+}
+
+.background {
+    background-image: url(../../images/global/landings.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 150px;
 }
 
 .dropdown-item {
