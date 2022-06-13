@@ -1,0 +1,14 @@
+.dropdown-toggle:after {
+  content: "\ea4a";
+  border: none;
+  font-family: "boxicons" !important;
+  font-weight: normal;
+  vertical-align: middle !important;
+}
+
+.dropdown-menu.show {
+  animation-name: show-dropdown;
+  animation-duration: 0.1s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}

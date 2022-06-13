@@ -1,0 +1,39 @@
+.navbar {
+  background-color: #fff;
+
+  .navbar-brand {
+    font-size: 22px;
+    font-weight: 800;
+    padding-right: 16px;
+  }
+
+  .nav-link {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8.6px 14px;
+
+    &.active {
+      color: #6366f1;
+    }
+  }
+}
+
+.cta {
+  .btn {
+    font-size: 14px;
+    font-weight: 600;
+  }
+}
+
+.nav-link {
+  color: #33354d;
+}
+
+@keyframes show-dropdown {
+  0% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
