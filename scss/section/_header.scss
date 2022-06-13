@@ -16,6 +16,21 @@
       color: #6366f1;
     }
   }
+
+  // landing dropdown image
+  .landingDropdown-image {
+    background-image: url("../images/landings-hover.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 224px;
+    min-height: 317px;
+  }
+
+  .dropdown-menu {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
 
 .cta {
