@@ -18,8 +18,8 @@
 .dropdown-menu {
     border: none;
     box-shadow: 0 0.275rem 1.25rem rgba(11, 15, 25, 0.05), 0 0.25rem 0.5625rem rgba(11, 15, 25, 0.03);
+    // padding: 1em;
     // margin-top: 0.25rem;
-    padding: 1em;
     .about-dropdown-item {
         font-size: 1rem;
         line-height: 1.4;
@@ -37,12 +37,25 @@
     }
 }
 
+.right-padding {
+    padding-right: 40px;
+}
+
 .background {
-    background-image: url(../../images/global/landings.jpg);
+    background-image: url("../../images/global/landings.jpg");
     background-repeat: no-repeat;
-    background-position: center;
     background-size: cover;
-    max-width: 150px;
+    height: 100%;
+    width: 224px;
+    min-height: 317px;
+    overflow: hidden;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+
+.dropdown-menu {
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .dropdown-item {
@@ -74,5 +87,34 @@
     }
     100% {
         transform: scale(1);
+    }
+}
+
+// mobile Design
+// .close-menu {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+// }
+.offcanvas-header {}
+
+// Responsive
+@media screen and (max-width: 991px) {
+    .row {
+        flex-direction: column;
+        width: 100%;
+    }
+    .dropdown-menu {
+        box-shadow: none;
+        .background {
+            display: none;
+        }
+    }
+    .cta {
+        padding: 1.5rem;
+        border-top: 1px solid #e2e5f1;
+        .btn {
+            justify-content: center;
+        }
     }
 }

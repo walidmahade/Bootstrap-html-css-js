@@ -23,13 +23,17 @@
                 <img src="images/global/logo.svg" alt="logo" height="44" width="47"> Silicon
             </a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="offcanvas offcanvas-end d-lg-flex flex-lg-row" id="navbarSupportedContent">
+                <div class="offcanvas-header border-bottom d-flex align-items-center justify-content-between d-lg-none d-md-inline-block">
+                    <h5 class="offcanvas-title">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
+                    <!-- Landing -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle active" href="#" id="landingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Landing
@@ -38,9 +42,9 @@
                         <ul class="dropdown-menu" aria-labelledby="landingDropdown">
                             <div class="row flex-nowrap">
                                 <div class="col background">
-                                    <li><a class="dropdown-item" href="#">Template Intro Page</a></li>
+
                                 </div>
-                                <div class="col">
+                                <div class="col pt-3 pb-2">
                                     <li><a class="dropdown-item" href="#">Template Intro Page</a></li>
                                     <li><a class="dropdown-item" href="#">Mobile App Showcase v.1</a></li>
                                     <li><a class="dropdown-item" href="#">Mobile App Showcase v.2</a></li>
@@ -50,7 +54,7 @@
                                     <li><a class="dropdown-item" href="#">Financial Consulting</a></li>
                                     <li><a class="dropdown-item" href="#">Online Courses</a></li>
                                 </div>
-                                <div class="col">
+                                <div class="col pt-3 right-padding">
                                     <li><a class="dropdown-item" href="#">Medical</a></li>
                                     <li><a class="dropdown-item" href="#">IT (Software) Company</a></li>
                                     <li><a class="dropdown-item" href="#">Conference</a></li>
@@ -60,7 +64,7 @@
                             </div>
                         </ul>
                     </li>
-
+                    <!-- Pages -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Pages
@@ -68,7 +72,7 @@
 
                         <ul class="dropdown-menu" aria-labelledby="pagesDropdown">
                             <div class="row flex-nowrap">
-                                <div class="col pe-2">
+                                <div class="col pe-2 pt-4 ps-4">
                                     <h6 class="about-dropdown-item px-3 mb-2">About</h6>
                                     <ul class="list-unstyled mb-3">
                                         <li><a class="dropdown-item py-1" href="#">About v.1</a></li>
@@ -101,7 +105,7 @@
 
 
                                 </div>
-                                <div class="col pe-4">
+                                <div class="col pe-4 pt-4">
                                     <!-- Portfolio -->
                                     <h6 class="about-dropdown-item px-3 mb-2">Portfolio</h6>
                                     <ul class="list-unstyled mb-3">
@@ -141,7 +145,7 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="col pe-5">
+                                <div class="col pe-5 pt-4">
                                     <!-- Pricing -->
                                     <h6 class="about-dropdown-item px-3 mb-2">Pricing</h6>
                                     <ul class="list-unstyled mb-3">
@@ -165,7 +169,7 @@
                             </div>
                         </ul>
                     </li>
-
+                    <!-- Account -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="accountDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Account
@@ -201,13 +205,14 @@
                 </ul>
 
                 <div class="cta">
-                    <a href="#" class="btn btn-primary d-flex align-items-center">
+                    <a href="#" class="btn btn-primary d-flex align-items-center offcanvas-header border-top">
                         <i class="bx bx-cart fs-5 lh-1 me-1"></i>
                         <span>Buy now</span>
                     </a>
                 </div>
 
             </div>
+
         </div>
     </header>
 
