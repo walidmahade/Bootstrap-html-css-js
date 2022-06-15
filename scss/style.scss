@@ -1,14 +1,12 @@
 html * {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 // customize bootstap
-@import "variables";
-
+@import "global/variables";
 // import bootstrap library
 @import "bootstrap/bootstrap.scss";
-
 // custom styles
 @import "components/btn";
 @import "components/dropdown";
